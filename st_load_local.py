@@ -1,38 +1,42 @@
-
+# import libraries
 import pandas as pd
 from nsetools import Nse
 import os
 
 
-
-
-
+# defining base location
 base_location = 'data_sources/stock_data'
 
-
+# create dir if not exist
 try:
     os.makedirs(base_location)
 except:
     pass
 
+# define file name according to indian time zone (NSE stock)
 date = pd.Timestamp.now(tz='Asia/Kolkata')
 date_str = str(date.date()).replace("-","_")
 print("extracting data for date ", date_str)
-
 base_location_date= os.path.join(base_location,date_str)
 print(base_location_date)
 
+# defing NSE api object
 nse = Nse() #stock API
 
+
+# create today's date dir
 try:
     os.makedirs(base_location_date)
 except:
     pass
 
-
+# load top 25 companies
 companies = pd.read_csv('top_25NSE.csv')
 companies_list = list(companies['Company Name'].values)
 
+
+
+# function to pull data from nse API
 def pull_stock_data(nse,companies_list):
     stock =pd.DataFrame()
     
@@ -51,7 +55,7 @@ def pull_stock_data(nse,companies_list):
 
 
     
-
+# csv file location and timestamp 
 date = pd.Timestamp.now(tz='Asia/Kolkata')
 hour = str(date.hour)
 min = str(date.minute)
@@ -59,7 +63,7 @@ csv_name = 'stock_data_'+hour+'_'+min+'.csv'
 csv_location = os.path.join(base_location_date,csv_name)
 print("\n saving data location is ",csv_location)
 
-# converting data to csv
+# converting data to csv and savnig to local
 stock_data = pull_stock_data(nse,companies_list)
 stock_data_csv = stock_data.to_csv()
 stock_data.to_csv(csv_location)
