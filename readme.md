@@ -101,7 +101,7 @@ python3 tw_load_mongo.py
 
 b. To load stock data in hdfs
 ```
-st_load_hdfs.py
+python3 st_load_hdfs.py
 ```
 
 
