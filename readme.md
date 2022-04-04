@@ -122,9 +122,9 @@ crontab -e
 to edit the file in any mode (nano,vim,etc)
 
 ```
-0 4-11 * * * python3 /home/bdm/tweet_4.py >> /home/bdm/logs/tw_logs.log;
-0 12 * * * python3 /home/bdm/mongo_tw.py >> /home/bdm/logs/tw_mongo_logs.log;
-0 4-11 * * * python3 /home/bdm/st_load_local.py >> /home/bdm/logs/st_local_logs$
+0 4-11 * * * python3 /home/bdm/tw_load_local.py >> /home/bdm/logs/tw_logs.log;
+0 12 * * * python3 /home/bdm/tw_load_mongo.py >> /home/bdm/logs/tw_mongo_logs.log;
+*/1 4-11 * * * python3 /home/bdm/st_load_local.py >> /home/bdm/logs/st_local_logs.log;
 0 12 * * * python3 /home/bdm/st_load_hdfs.py >> /home/bdm/logs/st_hdfs_logs.log
 ```
 
