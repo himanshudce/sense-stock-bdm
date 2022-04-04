@@ -52,8 +52,6 @@ def pull_stock_data(nse,companies_list):
 
 
 
-
-
     
 # csv file location and timestamp 
 date = pd.Timestamp.now(tz='Asia/Kolkata')

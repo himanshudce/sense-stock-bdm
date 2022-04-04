@@ -11,6 +11,10 @@ The Whole Pipeline Developement will be done in Three Phases -
 <br><br>
 
 # Phase 1
+The high level view of Phase one data pipeline is indicated below - 
+![img](src/high_level_view.png)
+
+<br>
 
 ## 1. Setup Data Sources
 **1. Twitter API** 
