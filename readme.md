@@ -11,12 +11,8 @@ pip install -r requirments.txt
 
 ![img](src/Pipeline.png)
 
-**---------------------------------------------------------------------------------------------------------------------------------**
+**------------------------------------------------------------------------------------------------------------------**
 
-Three Phases Development :
-<br><br>
-
-# Phase 1
 The high level view of Phase one data pipeline is indicated below - 
 ![img](src/high_level_view.png)
 
