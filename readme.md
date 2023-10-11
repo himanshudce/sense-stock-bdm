@@ -7,7 +7,13 @@ To install the requirments run
 pip install -r requirments.txt
 ```
 
-The Whole Pipeline Developement will be done in Three Phases -
+**The Data Pipeline :**
+
+![img](src/Pipeline.png)
+
+**---------------------------------------------------------------------------------------------------------------------------------**
+
+Three Phases Development :
 <br><br>
 
 # Phase 1
