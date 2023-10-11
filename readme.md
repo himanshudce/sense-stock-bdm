@@ -1,6 +1,6 @@
 # Big Data Pipeline (Sense Stock)
 The project aims to build a big data pipeline for our business idea Stock sense where we Aimed to provide stock data along with social media data in order to help in the invetment providing better sense to investment. The detailed Idea can be seen here - 
-[Stock Sense Slides](src/VBP_PRESENTATION.pdf)
+[Stock Sense Slides](https://drive.google.com/file/d/1pVkBId5rmK1ff_Kw644yA6481FHEf_pG/view?usp=sharing)
 
 To install the requirments run
 ```
